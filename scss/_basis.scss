@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Dosis',sans-serif ;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: $color-white;
+}
+.current{
+    border-bottom: $amber 2px solid;
+}
+.btn{
+    display: inline-block;
+    padding:20px 30px;
+    background-color: $background-light;
+    color: $color-dark;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+.btn:hover{
+    background-color: $amber;
+    
+}
+h2{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.icons-1 i{
+    color:$amber;
+}
+.submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-1{
+    margin-top: 20px;
+    display: inline-block;
+    padding:0.7rem 20rem;
+    background-color: #333;
+    color: $color-white;
+
+}
+.btn-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 10rem;
+    background-color: $amber;
+    color: $color-white;
+    font-size: 3rem;
+    text-align: center;
+}

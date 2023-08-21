@@ -1,0 +1,767 @@
+@import 'variables';
+@import 'grid';
+@import 'basis';
+
+
+// HEADER 
+#header{
+    height: 100vh;
+    width: 100vw;
+    background: url('/dist/img/showcase.jpg') no-repeat center center/cover;
+}
+// END OF HEADER 
+// NAVBAR 
+#navbar{
+    height: 5rem;
+    width: 100%;
+}
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+.logo img{
+    width: 100px;
+    height: 5rem;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding:0.5rem 1.2rem;
+}
+
+.menu ul li a{
+    padding: 0.5rem 0;
+    color: $color-white;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 1rem;
+
+}
+.menu ul li a:hover{
+    border-bottom: $amber 2px solid;
+}
+// END OF NAVBAR 
+// START OF SHOWCASE 
+#header .showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $color-white;
+    height: 100vh;
+    h1{
+        padding:0.7rem 0;
+
+    }
+    p{
+        padding-bottom:0.7rem;
+    }
+
+}
+// END OF SHOWCASE 
+
+// START OF SECTION 
+.section{
+    max-width: 1200px;
+    margin: auto;
+    h2{
+        text-align: center;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+        position: relative;
+        padding-bottom: 1.2rem;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        height: 2px;
+        width: 60px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+.section p:nth-child(2){
+    text-align: center;
+}
+.section .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    .icons-1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1.2rem;
+    }
+    i{
+        padding-bottom: 0.7rem;
+        
+    }
+    h3{
+        padding-bottom: 0.7rem;
+    }
+}
+// END OF SECTION 
+// START OF SECTION-3
+.section-3{
+    max-width: 1200px;
+    margin: auto;
+    h2{
+        text-align: center;
+        margin-bottom: 1.2rem;
+        margin-top: 1.2rem;
+        position: relative;
+        padding-bottom: 1.2rem;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        height: 2px;
+        width: 60px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+.section-3 p:nth-child(2){
+    text-align: center;
+}
+.section-3 .icons-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    .icons-5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+   .icons-5:hover{
+    transform: scaleY(1.1);
+
+   }
+    // START OF MAKING AMBER CIRCLES 
+    .special-icon{
+        margin-bottom: 1.2rem;
+    }
+   
+    .special-icon-1 i::after{
+        content: '1';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        background-color: $amber;
+        border-radius: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special-icon-1 i{
+        
+        background-color: $color-dark;
+        padding: 1.2rem 1.8rem;
+        border-radius: 50%;
+        color: $color-white;
+        position: relative;
+        
+    }
+    // START MAKING TRANSITION
+    .special-icon-1 i{
+        transition: all 0.3s ease;
+    }
+    .special-icon-1 i:hover{
+        background-color: $amber;
+    }
+    .special-icon-2 i{
+        transition: all 0.3s ease;
+    }
+    .special-icon-2 i:hover{
+        background-color: $amber;
+    }
+    .special-icon-3 i{
+        transition: all 0.3s ease;
+    }
+    .special-icon-3 i:hover{
+        background-color: $amber;
+    }
+    .special-icon-4 i{
+        transition: all 0.3s ease;
+    }
+    .special-icon-4 i:hover{
+        background-color: $amber;
+    }
+    // END MAKING TRANSITION 
+    .special-icon-2 i::after{
+        content: '2';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        background-color: $amber;
+        border-radius: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special-icon-2 i{
+        
+        background-color: $color-dark;
+        padding: 20px;
+        border-radius: 50%;
+        color: $color-white;
+        position: relative;
+    }
+    .special-icon-3 i::after{
+        content: '3';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        background-color: $amber;
+        border-radius: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special-icon-3 i{
+        
+        background-color: $color-dark;
+        padding: 1.2rem;
+        border-radius: 50%;
+        color: $color-white;
+        position: relative;
+    }
+    .special-icon-4 i::after{
+        content: '4';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        background-color: $amber;
+        border-radius: 50%;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .special-icon-4 i{
+        
+        background-color: $color-dark;
+        padding: 1.2rem;
+        border-radius: 50%;
+        color: $color-white;
+        position: relative;
+    }
+    // END OF MAKING AMBER CIRCLES 
+    h3{
+        padding-bottom: 0.7rem;
+    }
+}
+
+// END OF SECTION-3
+// START OF FOOTER 
+
+// ABOUT PAGE 
+#header-about{
+    height: 70px;
+    width:100%;
+    background: url('/dist/img/showcase.jpg') no-repeat center top/cover;
+    border-bottom: $amber 3px solid;
+}
+.showcase-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    h1{
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    h1::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 30%;
+        height: 2px;
+        width: 60px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.section-about-2{
+    margin-top: 20px;
+    background-color: #333;
+    padding:40px 0;
+    h2{
+        color: $color-white;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        height: 2px;
+        width: 50px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        text-transform: uppercase;
+    }
+    .one{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .one::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .one::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $amber;
+        z-index: 0;
+    }
+    .two{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .two::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .two::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 70%;
+        background-color: $amber;
+        z-index: 0;
+    }
+    .three{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .three::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .three::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 60%;
+        background-color: $amber;
+        z-index: 0;
+    }
+    .four{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .four::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .four::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $amber;
+        z-index: 0;
+    }
+    .five{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .five::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .five::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 70%;
+        background-color: $amber;
+        z-index: 0;
+    }
+    .six{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+    }
+    .six::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 20px;
+        width: 100%;
+        background-color: $background-dark;
+        z-index: -1;
+    }
+    .six::before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left: 0;
+        height: 20px;
+        width: 60%;
+        background-color: $amber;
+        z-index: 0;
+    }
+
+}
+.section-about-4{
+  margin-top: 20px;
+  p{text-align: center;}
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        height: 2px;
+        width: 50px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 50px;
+        border-radius: 50%;
+       
+    }
+    p:first-child{
+        text-align: center;
+        border: $color-dark 1px solid;
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
+    .person{
+        display: flex;
+        align-items: center;
+    }
+    .person img{
+        margin-right: 10px;
+    }
+}
+
+   
+
+
+
+// END OF ABOUT PAGE 
+// START OF WORK PAGE 
+
+
+
+
+
+// grid.scss
+
+
+
+
+// END OF WORK PAGE 
+// START OF CONTACT PAGE
+.contact{
+    padding:1rem 0;
+    h2{
+        color: $color-dark;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    h2::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 48%;
+        height: 2px;
+        width: 50px;
+        background-color: $amber;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .contact-inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap:20px;
+    }
+    #textarea{
+        grid-column:span 2;
+    }
+}
+.icons-contact{
+    width: 100%;
+    height: 10rem;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.contact-icons{
+display: flex;
+}
+.contact-icon-1{
+    margin:0 6rem;
+    text-align: center;
+}
+i{
+    color: $color-white;
+    margin-bottom: 10px;
+}
+p{
+    color: $color-white;
+}
+}
+// END OF CONTACT PAGE
+#footer{
+    height: 70px;
+    width: 100%;
+    background-color: $color-dark;
+
+}
+.footer{
+   
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        color:$color-white;
+        margin-left: 20px;
+    }
+    .footer-icons i{
+        padding:0 20px;
+        color: $color-white;
+    }
+}
+// END OF FOOTER 
+// MEDIA QUIRES
+@media (max-width:800px){
+    body{
+        overflow-y: scroll;
+    }
+#header{
+    height: 50vh;
+}
+#header .showcase{
+    height: 50vh;
+}
+
+}
+
+@media( max-width:500px){
+   #body{
+    overflow: scroll;
+   }
+    #header{
+        height:20vh;
+    }
+    #header .showcase{
+        display: none;
+    }
+    .menu ul li{
+        padding:5px 5px;
+    }
+    .section .icons{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .section-2 .icons-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .icons-3{
+        height: 200px;
+    }
+    .section-3 .icons-4{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #footer{
+        margin-top: 0;
+    }
+    .footer{
+   
+        padding:15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+            color:$color-white;
+            margin-left: 20px;
+        }
+        .footer-icons i{
+            padding:0 5px;
+            color: $color-white;
+        }
+    }
+    .section-about{
+        grid-template-columns: 1fr;
+    }
+    .section-about-1{
+        display: none;
+    }
+    .section-about-3{
+        display: none;
+    }
+    .section-about-3 .logos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,50px);
+        justify-items: center;
+    }
+    .section-about-4 .reviews{
+        grid-template-columns: 1fr;
+    }
+    .section-work .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .seciton-work h2,p{
+        margin-bottom: 0.5rem;
+        padding-bottom: 0;
+    }
+    .section-work h2:after{
+        display: none;
+    }
+    .btn-1{
+        padding:10px 100px;
+    }
+    .icons-contact{
+       width: 100%;
+       height: 100%;
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+        display: none;
+    }
+    .contact-icons{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .btn-2{
+        display: none;
+    }
+    .contact{
+        margin-top: 0;
+        padding:40px 0;
+    }
+}
