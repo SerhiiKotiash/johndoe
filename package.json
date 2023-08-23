@@ -5,14 +5,13 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive"
-    "build": "mkdir -p dist && cp -R src/* dist/",
-    "start": "netlify dev"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^9.0.0"
-    "netlify-cli": "*"
+    
   }
 }
